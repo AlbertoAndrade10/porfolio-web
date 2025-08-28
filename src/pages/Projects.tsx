@@ -6,31 +6,31 @@ import "animate.css";
 const technologiesLibreriaOnline = [
     {
         name: "Spring Boot",
-        iconSrc: "/icons/springboot.jpg",
+        iconSrc: "./icons/springboot.jpg",
     },
     {
         name: "Django",
-        iconSrc: "/icons/python.png",
+        iconSrc: "./icons/python.png",
     },
     {
         name: "Angular",
-        iconSrc: "/icons/angular.jpg",
+        iconSrc: "./icons/angular.jpg",
     },
     {
         name: "TailWind",
-        iconSrc: "/icons/tailwindImage.png",
+        iconSrc: "./icons/tailwindImage.png",
     },
     {
         name: "MySQL",
-        iconSrc: "/icons/mysql.jpg",
+        iconSrc: "./icons/mysql.jpg",
     },
     {
         name: "Docker",
-        iconSrc: "/icons/docker.jpg",
+        iconSrc: "./icons/docker.jpg",
     },
     {
         name: "GitHub",
-        iconSrc: "/icons/github.png",
+        iconSrc: "./icons/github.png",
     },
 
 
@@ -40,11 +40,11 @@ const technologiesLibreriaOnline = [
 const technologiesGeaPostBand = [
     {
         name: "Angular",
-        iconSrc: "/icons/angular.jpg",
+        iconSrc: "./icons/angular.jpg",
     },
     {
         name: "TailWind",
-        iconSrc: "/icons/tailwindImage.png",
+        iconSrc: "./icons/tailwindImage.png",
     },
 ];
 

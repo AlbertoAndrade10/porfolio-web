@@ -12,7 +12,7 @@ const Logo: React.FC<LogoProps> = ({
     return (
         <a href={href}>
             <img
-                src={"./images/logo-a-blanco.png"}
+                src={"./images/logo-a.png"}
                 alt="Logo Alberto Andrade Ortiz"
                 className={className}
             />

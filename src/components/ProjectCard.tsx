@@ -28,7 +28,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {/* Imagen sin efecto flip */}
             <div className="relative h-48">
                 <div className="relative w-full h-full">
-                    {/* Solo la imagen - Sin flip */}
                     <div className="absolute inset-0">
                         <img
                             src={imgSrc}
