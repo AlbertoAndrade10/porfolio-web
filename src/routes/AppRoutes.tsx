@@ -1,3 +1,4 @@
+// src/routes/AppRoutes.tsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from '../components/Header';
@@ -10,9 +11,10 @@ import GeaOficialBand from '../pages/GeaOficialBand';
 import NotFound from '../pages/NotFound';
 import Footer from '../components/Footer';
 
+
 const AppRoutes: React.FC = () => {
   return (
-    <Router basename="/porfolio-web"> {/* Añade esto */}
+    <Router>
       <div className="flex flex-col min-h-screen bg-gray-100">
         <Header />
         <main className="flex-grow container mx-auto px-4">
@@ -23,7 +25,10 @@ const AppRoutes: React.FC = () => {
             <Route path="/contacto" element={<Contact />} />
             <Route path="/libreria-online" element={<LibreriaOnline />} />
             <Route path="/gea-oficial-band" element={<GeaOficialBand />} />
-            <Route path="*" element={<NotFound />} />
+            {/* Ruta 404 - Página no encontrada */}
+            <Route path="*" element={
+              <NotFound />
+            } />
           </Routes>
         </main>
         <Footer />
