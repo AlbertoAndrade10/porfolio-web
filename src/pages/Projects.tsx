@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 ">
                 <ProjectCard
                     key="libreria-online"
-                    imgSrc={"/images/LibreriaOnline.webp"}
+                    imgSrc={"./images/LibreriaOnline.webp"}
                     title={"Libreria Online"}
                     description={
                         "Librería Online es una plataforma web diseñada para facilitar la gestión y venta de libros en línea. Los usuarios pueden explorar un catálogo de libros, filtrar por categorías, ver detalles de cada título y realizar compras de manera segura. La aplicación cuenta con un panel de administración que permite gestionar el inventario, agregar nuevos libros, actualizar información y supervisar las ventas. Desarrollada con Spring Boot y Django para el backend, Angular para el frontend y MySQL como base de datos, esta solución ofrece un rendimiento eficiente y una interfaz intuitiva para brindar una experiencia óptima tanto a los administradores como a los clientes."
@@ -77,7 +77,7 @@ const Projects: React.FC = () => {
                 />
                 <ProjectCard
                     key="gea"
-                    imgSrc={"/images/gea-post.jpg"}
+                    imgSrc={"./images/gea-post.jpg"}
                     title={"GEA Oficial Band"}
                     description={
                         "GEA es un proyecto en desarrollo de un grupo musical real, diseñado para ofrecer a los usuarios una experiencia inmersiva donde podrán conocer la trayectoria de la banda, disfrutar de sus últimos lanzamientos y estar al tanto de sus próximos eventos."

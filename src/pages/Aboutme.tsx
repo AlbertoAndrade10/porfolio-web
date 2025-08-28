@@ -91,43 +91,43 @@ const About: React.FC = () => {
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                     <div className="w-full">
-                        <TechnologyCard name={"Spring Boot"} iconSrc={"/icons/springboot.jpg"} />
+                        <TechnologyCard name={"Spring Boot"} iconSrc={"./icons/springboot.jpg"} />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"Java"} iconSrc={"/icons/java.png"} />
+                        <TechnologyCard name={"Java"} iconSrc={"./icons/java.png"} />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"Angular"} iconSrc={"/icons/angular.jpg"} />
+                        <TechnologyCard name={"Angular"} iconSrc={"./icons/angular.jpg"} />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"JavaScript"} iconSrc={"/icons/javascript.png"} />
+                        <TechnologyCard name={"JavaScript"} iconSrc={"./icons/javascript.png"} />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"TypeScript"} iconSrc={"/icons/typescript.png"} />
+                        <TechnologyCard name={"TypeScript"} iconSrc={"./icons/typescript.png"} />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"Tailwind"} iconSrc={"/icons/tailwindImage.png"} />
+                        <TechnologyCard name={"Tailwind"} iconSrc={"./icons/tailwindImage.png"} />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"Docker"} iconSrc={"/icons/docker.jpg"} />
+                        <TechnologyCard name={"Docker"} iconSrc={"./icons/docker.jpg"} />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"MySQL"} iconSrc={"/icons/mysql.jpg"} />
+                        <TechnologyCard name={"MySQL"} iconSrc={"./icons/mysql.jpg"} />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"PostgreSQL"} iconSrc={"/icons/postgresql.png"} />
+                        <TechnologyCard name={"PostgreSQL"} iconSrc={"./icons/postgresql.png"} />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"MongoDB"} iconSrc={"/icons/mongo-icon.png"} />
+                        <TechnologyCard name={"MongoDB"} iconSrc={"./icons/mongo-icon.png"} />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"Git"} iconSrc={"/icons/git.png"} />
+                        <TechnologyCard name={"Git"} iconSrc={"./icons/git.png"} />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"GitHub"} iconSrc={"/icons/github.png"} />
+                        <TechnologyCard name={"GitHub"} iconSrc={"./icons/github.png"} />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"GitLab"} iconSrc={"/icons/gitlab.png"} />
+                        <TechnologyCard name={"GitLab"} iconSrc={"./icons/gitlab.png"} />
                     </div>
                 </div>
             </section>

@@ -14,7 +14,7 @@ const Home: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
                 <div className="flex-shrink-0">
                     <picture>
-                        <source srcSet="/images/FotoCurriculum.png" type="image/webp" />
+                        <source srcSet="./images/FotoCurriculum.png" type="image/webp" />
                         <img
                             src="./images/FotoCurriculum.png"
                             alt="Alberto Andrade Ortiz"

@@ -8,7 +8,7 @@ interface NotFoundProps {
 }
 
 const NotFound: React.FC<NotFoundProps> = ({
-    imageUrl = "/images/404-notfound.png",
+    imageUrl = "./images/404-notfound.png",
     altText = "Página no encontrada",
     className = ""
 }) => {

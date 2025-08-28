@@ -1,4 +1,3 @@
-// src/components/Footer.tsx
 import React from "react";
 import TechnologyCard from "./TechnologyCard";
 import TechnologyCardFooter from "./FooterCard";
@@ -18,13 +17,13 @@ const Footer: React.FC = () => {
                         <div className="w-auto">
                             <TechnologyCard
                                 name={"React"}
-                                iconSrc={"/icons/react.png"}
+                                iconSrc={"./icons/react.png"}
                             />
                         </div>
                         <div className="w-auto">
                             <TechnologyCardFooter
                                 name={"Tailwind"}
-                                iconSrc={"/icons/tailwindImage.png"}
+                                iconSrc={"./icons/tailwindImage.png"}
                             />
                         </div>
                     </div>
