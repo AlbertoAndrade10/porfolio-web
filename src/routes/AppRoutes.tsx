@@ -12,7 +12,7 @@ import Footer from '../components/Footer';
 
 const AppRoutes: React.FC = () => {
   return (
-    <Router basename="/porfolio-web"> {/* Añade esto */}
+    <Router basename="/porfolio-web/">
       <div className="flex flex-col min-h-screen bg-gray-100">
         <Header />
         <main className="flex-grow container mx-auto px-4">
