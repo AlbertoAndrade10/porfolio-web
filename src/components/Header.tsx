@@ -65,7 +65,7 @@ const Header: React.FC = () => {
                     <div className="absolute left-0 text-xl font-bold">
                         <Logo
                             className="w-auto h-10"
-                            href="/"
+                            href="#/"
                         />
                     </div>
 
