@@ -4,11 +4,15 @@ import React from 'react';
 interface TechnologyCardProps {
     name: string;
     iconSrc: string;
+    aosEffect?: string;
 }
 
-const TechnologyCard: React.FC<TechnologyCardProps> = ({ name, iconSrc }) => {
+const TechnologyCard: React.FC<TechnologyCardProps> = ({ name, iconSrc, aosEffect = "fade-up" }) => {
     return (
-        <div className="flex flex-col items-center justify-center bg-gray-50 p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow min-h-[80px]">
+        <div
+            data-aos={aosEffect}
+            className="flex flex-col items-center justify-center bg-gray-50 p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow min-h-[80px]"
+        >
             <img
                 src={iconSrc}
                 alt={name}

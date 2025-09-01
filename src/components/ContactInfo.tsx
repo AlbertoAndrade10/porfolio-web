@@ -1,5 +1,3 @@
-
-// src/components/ContactCard.tsx
 import React from "react";
 
 interface ContactInfo {
@@ -14,12 +12,14 @@ interface ContactCardProps {
     contact: ContactInfo;
     onCopy: (text: string, field: string) => void;
     copiedField: string | null;
+    aosEffect?: string; // Nuevo prop opcional para AOS
 }
 
 const ContactCard: React.FC<ContactCardProps> = ({
     contact,
     onCopy,
     copiedField,
+    aosEffect = "fade-up", // Valor predeterminado
 }) => {
     const handleClick = () => {
         if (contact.id === "email") {
@@ -38,6 +38,7 @@ const ContactCard: React.FC<ContactCardProps> = ({
 
     return (
         <div
+            data-aos={aosEffect} // Aplicamos el efecto AOS aquí
             className="flex items-center p-3 sm:p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer group"
             onClick={handleClick}
         >

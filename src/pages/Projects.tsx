@@ -55,6 +55,7 @@ const Projects: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                {/* Proyecto 1 */}
                 <ProjectCard
                     key="libreria-online"
                     imgSrc={"./images/LibreriaOnline.webp"}
@@ -68,7 +69,10 @@ const Projects: React.FC = () => {
                     }}
                     status={"en-desarrollo"}
                     technologies={technologiesLibreriaOnline}
+                    aosEffect="fade-left" // Animación desde la izquierda
                 />
+
+                {/* Proyecto 2 */}
                 <ProjectCard
                     key="gea"
                     imgSrc={"./images/gea-post.jpg"}
@@ -82,6 +86,7 @@ const Projects: React.FC = () => {
                     }}
                     status={"en-desarrollo"}
                     technologies={technologiesGeaPostBand}
+                    aosEffect="fade-right" // Animación desde la derecha
                 />
             </div>
         </div>

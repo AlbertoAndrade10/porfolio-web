@@ -1,4 +1,5 @@
 // src/components/ProjectCard.tsx
+import React from "react";
 import TechnologyCard from "./TechnologyCard";
 
 interface Technology {
@@ -13,6 +14,7 @@ interface ProjectCardProps {
     buttonLink: { to: string; label: string };
     status: "finalizado" | "en-desarrollo";
     technologies: Technology[];
+    aosEffect?: string; // Nuevo prop opcional para AOS
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -22,9 +24,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     buttonLink,
     status,
     technologies,
+    aosEffect = "fade-up", // Valor predeterminado
 }) => {
     return (
-        <div className="project-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 text-left overflow-hidden h-full flex flex-col border border-gray-100 hover:border-indigo-200">
+        <div
+            data-aos={aosEffect} // Aplicamos el efecto AOS aquí
+            className="project-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 text-left overflow-hidden h-full flex flex-col border border-gray-100 hover:border-indigo-200"
+        >
             {/* Imagen sin efecto flip */}
             <div className="relative h-48">
                 <div className="relative w-full h-full">

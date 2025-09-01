@@ -11,12 +11,25 @@ const Header: React.FC = () => {
         window.scrollTo(0, 0);
     }, [location]);
 
-    // Cierre de menu al cambiar de ruta
+    // Cierre de menú al cambiar de ruta
     useEffect(() => {
         setIsMenuOpen(false);
     }, [location]);
 
-    // Cierre de menu al hacer clic fuera
+    // Bloquear/desbloquear scroll del body
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = "hidden"; // Bloquea el scroll
+        } else {
+            document.body.style.overflow = ""; // Restaura el scroll
+        }
+
+        return () => {
+            document.body.style.overflow = ""; // Asegura que el scroll se restaure al desmontar el componente
+        };
+    }, [isMenuOpen]);
+
+    // Cierre de menú al hacer clic fuera
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             const menu = document.getElementById('mobile-menu');
@@ -35,7 +48,7 @@ const Header: React.FC = () => {
         };
     }, [isMenuOpen]);
 
-    //Cierre de menu con la tecla ESC (scape)
+    // Cierre de menú con la tecla ESC (escape)
     useEffect(() => {
         const handleEscape = (event: KeyboardEvent) => {
             if (event.key === 'Escape' && isMenuOpen) {
@@ -49,7 +62,7 @@ const Header: React.FC = () => {
         };
     }, [isMenuOpen]);
 
-    //Rutas para el nav
+    // Rutas para el nav
     const navItems = [
         { to: "/", label: "Inicio" },
         { to: "/sobre-mi", label: "Sobre mí" },
@@ -60,7 +73,7 @@ const Header: React.FC = () => {
     return (
         <header className="bg-white text-black shadow-lg sticky top-0 z-50">
             <div className="container mx-auto px-4 py-4">
-                {/* Contenedor*/}
+                {/* Contenedor */}
                 <div className="hidden md:flex justify-center items-center relative">
                     <div className="absolute left-0 text-xl font-bold">
                         <Logo
@@ -90,7 +103,7 @@ const Header: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Layout moviles */}
+                {/* Layout móviles */}
                 <div className="flex md:hidden justify-between items-center">
                     {/* Logo o marca (opcional) */}
                     <div className="absolute left-1/2 transform -translate-x-1/2 text-xl font-bold">
@@ -99,7 +112,6 @@ const Header: React.FC = () => {
 
                     {/* Sección izquierda en móviles - texto + botón menú */}
                     <div className="flex items-center gap-4">
-
                         {/* Botón de menú hamburguesa */}
                         <button
                             id="menu-button"
@@ -123,7 +135,7 @@ const Header: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Menú móvil*/}
+                {/* Menú móvil */}
                 <div
                     id="mobile-menu"
                     className={`md:hidden fixed top-0 left-0 h-full w-1/2 bg-white z-50 transform transition-transform duration-300 ease-in-out shadow-xl ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'
@@ -166,4 +178,5 @@ const Header: React.FC = () => {
         </header>
     );
 };
+
 export default Header;

@@ -1,17 +1,25 @@
 // src/pages/Home.tsx
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "../components/Card";
 import TitleExperienciaLaboral from "../components/TitleExperience";
 import TitleFormacionAcademica from "../components/TitleFormacionAcademica";
 import TitleIdiomas from "../components/TitleIdiomas";
 import "animate.css";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Home: React.FC = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-cubic',
+        });
+    }, []);
     return (
 
         <div className="py-12 animate__animated animate__fadeIn">
             {/* PORTADA */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
+            <div data-aos="fade-down" className="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
                 <div className="flex-shrink-0">
                     <picture>
                         <source srcSet="./images/FotoCurriculum.png" type="image/webp" />
@@ -33,7 +41,7 @@ const Home: React.FC = () => {
 
             {/* EXPERIENCIA LABORAL */}
             <TitleExperienciaLaboral title={"Experiencia laboral"} />
-            <div className="space-y-8 mt-5 w-full ">
+            <div data-aos="fade-left" className="space-y-8 mt-5 w-full ">
                 <Card title="Prácticas en empresa - Insinno SL">
                     <div className="space-y-6">
                         <ul className="space-y-3">
