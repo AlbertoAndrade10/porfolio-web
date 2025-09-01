@@ -32,9 +32,6 @@ const technologiesLibreriaOnline = [
         name: "GitHub",
         iconSrc: "./icons/github.png",
     },
-
-
-
 ];
 
 const technologiesGeaPostBand = [
@@ -53,13 +50,11 @@ const Projects: React.FC = () => {
 
     return (
         <div className="py-12 animate__animated animate__fadeIn">
-
             <div className="flex items-center justify-center">
-                <h1 className="text-3xl font-bold text-gray-800 mb-8 ">Proyectos Personales</h1>
+                <h1 className="text-3xl font-bold text-gray-800 mb-8">Proyectos Personales</h1>
             </div>
 
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                 <ProjectCard
                     key="libreria-online"
                     imgSrc={"./images/LibreriaOnline.webp"}
@@ -68,12 +63,11 @@ const Projects: React.FC = () => {
                         "Librería Online es una plataforma web diseñada para facilitar la gestión y venta de libros en línea. Los usuarios pueden explorar un catálogo de libros, filtrar por categorías, ver detalles de cada título y realizar compras de manera segura. La aplicación cuenta con un panel de administración que permite gestionar el inventario, agregar nuevos libros, actualizar información y supervisar las ventas. Desarrollada con Spring Boot y Django para el backend, Angular para el frontend y MySQL como base de datos, esta solución ofrece un rendimiento eficiente y una interfaz intuitiva para brindar una experiencia óptima tanto a los administradores como a los clientes."
                     }
                     buttonLink={{
-                        to: "/libreria-online",
+                        to: "#/libreria-online",
                         label: "LibreriaOnline",
                     }}
                     status={"en-desarrollo"}
                     technologies={technologiesLibreriaOnline}
-
                 />
                 <ProjectCard
                     key="gea"
@@ -83,7 +77,7 @@ const Projects: React.FC = () => {
                         "GEA es un proyecto en desarrollo de un grupo musical real, diseñado para ofrecer a los usuarios una experiencia inmersiva donde podrán conocer la trayectoria de la banda, disfrutar de sus últimos lanzamientos y estar al tanto de sus próximos eventos."
                     }
                     buttonLink={{
-                        to: "/gea-oficial-band",
+                        to: "#/gea-oficial-band",
                         label: "GeaOficialBand",
                     }}
                     status={"en-desarrollo"}
