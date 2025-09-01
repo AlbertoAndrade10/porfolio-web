@@ -42,7 +42,7 @@ const Home: React.FC = () => {
             {/* EXPERIENCIA LABORAL */}
             <TitleExperienciaLaboral title={"Experiencia laboral"} />
             <div data-aos="fade-left" className="space-y-8 mt-5 w-full ">
-                <Card title="Prácticas en empresa - Insinno SL">
+                <Card title="Desarrollador en Insinno SL">
                     <div className="space-y-6">
                         <ul className="space-y-3">
                             <li className="flex items-start">
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
                     </div>
                 </Card>
 
-                <Card title="Prácticas en empresa - App Informática">
+                <Card title="Asesor en App Informática">
                     <div className="space-y-6">
                         <ul className="space-y-3">
                             <li className="flex items-start">
