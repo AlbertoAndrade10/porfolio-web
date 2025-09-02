@@ -2,6 +2,7 @@ import React from "react";
 
 interface TitleExperience {
     title: string;
+
 }
 
 const TitleExperienciaLaboral: React.FC<TitleExperience> = ({ title }) => {
@@ -22,6 +23,7 @@ const TitleExperienciaLaboral: React.FC<TitleExperience> = ({ title }) => {
                 ></path>
             </svg>
             {title}
+
         </h2>
     );
 };

@@ -98,7 +98,7 @@ const Contact: React.FC = () => {
             </div>
             <div className="max-w-4xl mx-auto px-4">
                 <div className="space-y-4 md:space-y-6">
-                    <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-6 md:p-8 border border-indigo-100">
+                    <div className="  p-6 md:p-8 ">
                         <div className="space-y-3 md:space-y-4">
                             {contactInfo.map((contact, index) => (
                                 <ContactCard
@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
                                     contact={contact}
                                     onCopy={copyToClipboard}
                                     copiedField={copiedField}
-                                    aosEffect={index % 2 === 0 ? "fade-left" : "fade-right"} // Alternar efectos
+                                    aosEffect={index % 2 === 0 ? "fade-left" : "fade-right"}
                                 />
                             ))}
                         </div>

@@ -6,30 +6,27 @@ const Header: React.FC = () => {
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    // Header fijo
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location]);
 
-    // Cierre de menú al cambiar de ruta
     useEffect(() => {
         setIsMenuOpen(false);
     }, [location]);
 
-    // Bloquear/desbloquear scroll del body
+
     useEffect(() => {
         if (isMenuOpen) {
-            document.body.style.overflow = "hidden"; // Bloquea el scroll
+            document.body.style.overflow = "hidden";
         } else {
-            document.body.style.overflow = ""; // Restaura el scroll
+            document.body.style.overflow = "";
         }
 
         return () => {
-            document.body.style.overflow = ""; // Asegura que el scroll se restaure al desmontar el componente
+            document.body.style.overflow = "";
         };
     }, [isMenuOpen]);
 
-    // Cierre de menú al hacer clic fuera
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             const menu = document.getElementById('mobile-menu');
@@ -48,7 +45,7 @@ const Header: React.FC = () => {
         };
     }, [isMenuOpen]);
 
-    // Cierre de menú con la tecla ESC (escape)
+    // Cierre de menu con la tecla ESC 
     useEffect(() => {
         const handleEscape = (event: KeyboardEvent) => {
             if (event.key === 'Escape' && isMenuOpen) {

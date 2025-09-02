@@ -47,7 +47,7 @@ const GeaOficialBand: React.FC = () => {
 
     return (
         <AboutProjectsTemplate
-            headerTitle="GEA Oficial Band"
+            headerTitle="GEA Official Band"
             headerDescription="Un proyecto en desarrollo de un grupo musical real, diseñado para ofrecer una experiencia inmersiva."
             features={features}
             summary="Conoce la trayectoria de GEA, disfruta de sus últimos lanzamientos y mantente al tanto de sus próximos eventos."
