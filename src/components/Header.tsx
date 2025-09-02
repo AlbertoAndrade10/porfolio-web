@@ -64,10 +64,10 @@ const Header: React.FC = () => {
 
     // Rutas para el nav
     const navItems = [
-        { to: "/", label: "Inicio" },
-        { to: "/sobre-mi", label: "Sobre mí" },
-        { to: "/proyectos", label: "Proyectos" },
-        { to: "/contacto", label: "Contacto" }
+        { to: "#/", label: "Inicio" },
+        { to: "#/sobre-mi", label: "Sobre mí" },
+        { to: "#/proyectos", label: "Proyectos" },
+        { to: "#/contacto", label: "Contacto" }
     ];
 
     return (
@@ -110,7 +110,7 @@ const Header: React.FC = () => {
                         <Logo className="h-8 w-auto" />
                     </div>
 
-                    {/* Sección izquierda en móviles - texto + botón menú */}
+                    {/* Menu movil */}
                     <div className="flex items-center gap-4">
                         {/* Botón de menú hamburguesa */}
                         <button

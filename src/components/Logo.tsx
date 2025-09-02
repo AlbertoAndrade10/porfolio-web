@@ -7,7 +7,7 @@ interface LogoProps {
 
 const Logo: React.FC<LogoProps> = ({
     className = "",
-    href = "/"
+    href = "#/"
 }) => {
     return (
         <a href={href}>
