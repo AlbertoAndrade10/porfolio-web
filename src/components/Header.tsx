@@ -64,10 +64,10 @@ const Header: React.FC = () => {
 
     // Rutas para el nav
     const navItems = [
-        { to: "#/", label: "Inicio" },
-        { to: "#/sobre-mi", label: "Sobre mí" },
-        { to: "#/proyectos", label: "Proyectos" },
-        { to: "#/contacto", label: "Contacto" }
+        { to: "/", label: "Inicio" },
+        { to: "/sobre-mi", label: "Sobre mí" },
+        { to: "/proyectos", label: "Proyectos" },
+        { to: "/contacto", label: "Contacto" }
     ];
 
     return (
