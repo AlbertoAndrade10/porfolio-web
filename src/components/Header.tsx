@@ -104,7 +104,9 @@ const Header: React.FC = () => {
                 <div className="flex md:hidden justify-between items-center">
                     {/* Logo o marca (opcional) */}
                     <div className="absolute left-1/2 transform -translate-x-1/2 text-xl font-bold">
-                        <Logo className="h-8 w-auto" />
+                        <Logo className="h-8 w-auto"
+                            href="#/"
+                        />
                     </div>
 
                     {/* Menu movil */}
