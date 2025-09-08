@@ -9,8 +9,8 @@ const technologiesLibreriaOnline = [
         iconSrc: "./icons/springboot.jpg",
     },
     {
-        name: "Django",
-        iconSrc: "./icons/python.png",
+        name: "SupaBase",
+        iconSrc: "./icons/supabase.webp",
     },
     {
         name: "Angular",
@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
                     imgSrc={"./images/LibreriaOnline.webp"}
                     title={"Libreria Online"}
                     description={
-                        "Librería Online es una plataforma web diseñada para facilitar la gestión y venta de libros en línea. Los usuarios pueden explorar un catálogo de libros, filtrar por categorías, ver detalles de cada título y realizar compras de manera segura. La aplicación cuenta con un panel de administración que permite gestionar el inventario, agregar nuevos libros, actualizar información y supervisar las ventas. Desarrollada con Spring Boot y Django para el backend, Angular para el frontend y MySQL como base de datos, esta solución ofrece un rendimiento eficiente y una interfaz intuitiva para brindar una experiencia óptima tanto a los administradores como a los clientes."
+                        "Librería Online es una plataforma web diseñada para facilitar la gestión y venta de libros en línea. Los usuarios pueden explorar un catálogo de libros, filtrar por categorías, ver detalles de cada título y realizar compras de manera segura. La aplicación cuenta con un panel de administración que permite gestionar el inventario, agregar nuevos libros, actualizar información y supervisar las ventas. Desarrollada con Spring Boot y SupaBase para el backend, Angular para el frontend y MySQL como base de datos, esta solución ofrece un rendimiento eficiente y una interfaz intuitiva para brindar una experiencia óptima tanto a los administradores como a los clientes."
                     }
                     buttonLink={{
                         to: "#/libreria-online",
@@ -69,7 +69,7 @@ const Projects: React.FC = () => {
                     }}
                     status={"en-desarrollo"}
                     technologies={technologiesLibreriaOnline}
-                    aosEffect="fade-left" // Animación desde la izquierda
+                    aosEffect="fade-left"
                 />
 
                 {/* Proyecto 2 */}
@@ -86,7 +86,7 @@ const Projects: React.FC = () => {
                     }}
                     status={"en-desarrollo"}
                     technologies={technologiesGeaPostBand}
-                    aosEffect="fade-right" // Animación desde la derecha
+                    aosEffect="fade-right"
                 />
             </div>
         </div>
