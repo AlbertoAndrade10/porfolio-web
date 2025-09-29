@@ -8,10 +8,7 @@ const technologiesLibreriaOnline = [
         name: "Spring Boot",
         iconSrc: "./icons/springboot.jpg",
     },
-    {
-        name: "SupaBase",
-        iconSrc: "./icons/supabase.webp",
-    },
+
     {
         name: "Angular",
         iconSrc: "./icons/angular.jpg",
