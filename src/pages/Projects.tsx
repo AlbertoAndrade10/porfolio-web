@@ -33,8 +33,12 @@ const technologiesLibreriaOnline = [
 
 const technologiesGeaPostBand = [
     {
-        name: "Angular",
-        iconSrc: "./icons/angular.jpg",
+        name: "NextJS",
+        iconSrc: "./icons/nextjs.png",
+    },
+    {
+        name: "React",
+        iconSrc: "./icons/react.png",
     },
     {
         name: "TailWind",
