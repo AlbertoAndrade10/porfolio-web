@@ -9,7 +9,7 @@ interface AboutProjectProps {
     headerTitle: string;
     headerDescription: string;
     features: Feature[];
-    summary: string;
+    summary?: string;
     buttonText: string;
     onButtonClick?: () => void;
 }

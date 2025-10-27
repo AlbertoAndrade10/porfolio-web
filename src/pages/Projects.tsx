@@ -42,9 +42,20 @@ const technologiesGeaPostBand = [
     },
     {
         name: "TailWind",
-        iconSrc: "./icons/tailwindImage.png",
+        iconSrc: "./icons/mysql.jpg",
     },
 ];
+
+const technologiesAuthService = [
+    {
+        name: "Spring Boot",
+        iconSrc: "./icons/springboot.jpg",
+    },
+    {
+        name: "MySQL",
+        iconSrc: "./icons/mysql.jpg",
+    },
+]
 
 const Projects: React.FC = () => {
     console.log("Rendering Projects page");
@@ -56,7 +67,7 @@ const Projects: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                {/* Proyecto 1 */}
+                {/* Libreria Online */}
                 <ProjectCard
                     key="libreria-online"
                     imgSrc={"./images/LibreriaOnline.webp"}
@@ -73,7 +84,7 @@ const Projects: React.FC = () => {
                     aosEffect="fade-left"
                 />
 
-                {/* Proyecto 2 */}
+                {/* GEA OFFICIAL BAND */}
                 <ProjectCard
                     key="gea"
                     imgSrc={"./images/gea-post.jpg"}
@@ -88,6 +99,23 @@ const Projects: React.FC = () => {
                     status={"en-desarrollo"}
                     technologies={technologiesGeaPostBand}
                     aosEffect="fade-right"
+                />
+
+                {/* Auth microservice */}
+                <ProjectCard
+                    key="authservice"
+                    imgSrc={"./images/SpringBootLogo.webp"}
+                    title={"Auth Service"}
+                    description={
+                        "Plantilla para un microservicio en Spring Boot de gestión de usuarios con roles y tokens JWT."
+                    }
+                    buttonLink={{
+                        to: "#/auth-service",
+                        label: "AuthService",
+                    }}
+                    status={"finalizado"}
+                    technologies={technologiesAuthService}
+                    aosEffect="fade-left"
                 />
             </div>
         </div>
