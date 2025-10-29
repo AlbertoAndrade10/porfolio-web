@@ -42,7 +42,7 @@ const technologiesGeaPostBand = [
     },
     {
         name: "TailWind",
-        iconSrc: "./icons/mysql.jpg",
+        iconSrc: "./icons/tailwindImage.png",
     },
 ];
 
