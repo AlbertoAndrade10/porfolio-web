@@ -53,7 +53,7 @@ const AboutProjectsTemplate: React.FC<AboutProjectProps> = ({
                     {/* Botón */}
                     <div data-aos="fade-down" className="flex justify-center mt-6">
                         <button
-                            className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition duration-300"
+                            className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition duration-300 cursor-pointer"
                             onClick={onButtonClick}
                         >
                             {buttonText}

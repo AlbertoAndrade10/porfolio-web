@@ -10,6 +10,7 @@ import GeaOficialBand from '../pages/GeaOficialBand';
 import NotFound from '../pages/NotFound';
 import Footer from '../components/Footer';
 import AuthServicePage from '../pages/AuthServicePage';
+import BookingHotels from '../pages/BookingHotels';
 
 const AppRoutes: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const AppRoutes: React.FC = () => {
             <Route path="/libreria-online" element={<LibreriaOnline />} />
             <Route path="/gea-oficial-band" element={<GeaOficialBand />} />
             <Route path="/auth-service" element={<AuthServicePage />} />
+            <Route path="/booking-hotels" element={<BookingHotels />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

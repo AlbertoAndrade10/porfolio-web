@@ -52,8 +52,44 @@ const technologiesAuthService = [
         iconSrc: "./icons/springboot.jpg",
     },
     {
+        name: "Docker",
+        iconSrc: "./icons/docker.jpg",
+    },
+    {
         name: "MySQL",
         iconSrc: "./icons/mysql.jpg",
+    },
+]
+
+const technologiesBookingHotels = [
+    {
+        name: "Spring Boot",
+        iconSrc: "./icons/springboot.jpg",
+    },
+
+    {
+        name: "NextJS",
+        iconSrc: "./icons/nextjs.png",
+    },
+    {
+        name: "React",
+        iconSrc: "./icons/react.png",
+    },
+    {
+        name: "TailWind",
+        iconSrc: "./icons/tailwindImage.png",
+    },
+    {
+        name: "MySQL",
+        iconSrc: "./icons/mysql.jpg",
+    },
+    {
+        name: "Docker",
+        iconSrc: "./icons/docker.jpg",
+    },
+    {
+        name: "GitHub",
+        iconSrc: "./icons/github.png",
     },
 ]
 
@@ -67,6 +103,33 @@ const Projects: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+                {/* Auth microservice */}
+                <ProjectCard
+                    key="authservice"
+                    imgSrc={"./images/SpringBootLogo.webp"}
+                    title={"Auth Service"}
+                    description={
+                        "Plantilla para un microservicio en Spring Boot de gestión de usuarios con roles y tokens JWT."
+                    }
+                    buttonLink={{
+                        to: "#/auth-service",
+                        label: "AuthService",
+                    }}
+                    status={"finalizado"}
+                    technologies={technologiesAuthService}
+                    aosEffect="fade-left"
+                />
+
+                {/* Booking Hotels */}
+                <ProjectCard key="booking-hotel" imgSrc={"./images/hotel.webp"} title={"Booking Hotels"} description={"Plataforma Web diseñada para la gestión de reservas online de habitaciones de hoteles. Los usuarios pueden explorar las habitaciones disponibles y hacer una reserva de una habitación el tiempo deseado."} buttonLink={{
+                    to: "#/booking-hotels",
+                    label: "BookingHotels"
+                }} status={"en-desarrollo"}
+                    technologies={technologiesBookingHotels}
+                    aosEffect="fade-right" />
+
+
                 {/* Libreria Online */}
                 <ProjectCard
                     key="libreria-online"
@@ -101,22 +164,7 @@ const Projects: React.FC = () => {
                     aosEffect="fade-right"
                 />
 
-                {/* Auth microservice */}
-                <ProjectCard
-                    key="authservice"
-                    imgSrc={"./images/SpringBootLogo.webp"}
-                    title={"Auth Service"}
-                    description={
-                        "Plantilla para un microservicio en Spring Boot de gestión de usuarios con roles y tokens JWT."
-                    }
-                    buttonLink={{
-                        to: "#/auth-service",
-                        label: "AuthService",
-                    }}
-                    status={"finalizado"}
-                    technologies={technologiesAuthService}
-                    aosEffect="fade-left"
-                />
+
             </div>
         </div>
     );
