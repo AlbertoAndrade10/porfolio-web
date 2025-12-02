@@ -3,33 +3,7 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import "animate.css";
 
-const technologiesLibreriaOnline = [
-    {
-        name: "Spring Boot",
-        iconSrc: "./icons/springboot.jpg",
-    },
 
-    {
-        name: "Angular",
-        iconSrc: "./icons/angular.jpg",
-    },
-    {
-        name: "TailWind",
-        iconSrc: "./icons/tailwindImage.png",
-    },
-    {
-        name: "MySQL",
-        iconSrc: "./icons/mysql.jpg",
-    },
-    {
-        name: "Docker",
-        iconSrc: "./icons/docker.jpg",
-    },
-    {
-        name: "GitHub",
-        iconSrc: "./icons/github.png",
-    },
-];
 
 const technologiesGeaPostBand = [
     {
@@ -68,29 +42,20 @@ const technologiesBookingHotels = [
     },
 
     {
-        name: "NextJS",
-        iconSrc: "./icons/nextjs.png",
+        name: "NestJS",
+        iconSrc: "./icons/nestjs.png",
     },
+
+
     {
-        name: "React",
-        iconSrc: "./icons/react.png",
-    },
-    {
-        name: "TailWind",
-        iconSrc: "./icons/tailwindImage.png",
-    },
-    {
-        name: "MySQL",
-        iconSrc: "./icons/mysql.jpg",
+        name: "PostgreSQL",
+        iconSrc: "./icons/postgresql.png",
     },
     {
         name: "Docker",
         iconSrc: "./icons/docker.jpg",
     },
-    {
-        name: "GitHub",
-        iconSrc: "./icons/github.png",
-    },
+
 ]
 
 const Projects: React.FC = () => {
@@ -103,6 +68,30 @@ const Projects: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+                {/* GEA OFFICIAL BAND */}
+                <ProjectCard
+                    key="gea"
+                    imgSrc={"./images/gea-post.jpg"}
+                    title={"GEA Oficial Band"}
+                    description={
+                        "GEA es un proyecto en desarrollo de un grupo musical real, diseñado para ofrecer a los usuarios una experiencia inmersiva donde podrán conocer la trayectoria de la banda, disfrutar de sus últimos lanzamientos y estar al tanto de sus próximos eventos."
+                    }
+                    buttonLink={{
+                        to: "#/gea-oficial-band",
+                        label: "GeaOficialBand",
+                    }}
+                    status={"finalizado"}
+                    technologies={technologiesGeaPostBand}
+                    aosEffect="fade-right"
+                />
+                {/* Booking Hotels */}
+                <ProjectCard key="booking-hotel" imgSrc={"./images/hotel.webp"} title={"Booking Hotels"} description={"Plataforma Web diseñada para la gestión de reservas online de habitaciones de hoteles. Los usuarios pueden explorar las habitaciones disponibles y hacer una reserva de una habitación el tiempo deseado."} buttonLink={{
+                    to: "#/booking-hotels",
+                    label: "BookingHotels"
+                }} status={"en-desarrollo"}
+                    technologies={technologiesBookingHotels}
+                    aosEffect="fade-right" />
 
                 {/* Auth microservice */}
                 <ProjectCard
@@ -121,48 +110,6 @@ const Projects: React.FC = () => {
                     aosEffect="fade-left"
                 />
 
-                {/* Booking Hotels */}
-                <ProjectCard key="booking-hotel" imgSrc={"./images/hotel.webp"} title={"Booking Hotels"} description={"Plataforma Web diseñada para la gestión de reservas online de habitaciones de hoteles. Los usuarios pueden explorar las habitaciones disponibles y hacer una reserva de una habitación el tiempo deseado."} buttonLink={{
-                    to: "#/booking-hotels",
-                    label: "BookingHotels"
-                }} status={"en-desarrollo"}
-                    technologies={technologiesBookingHotels}
-                    aosEffect="fade-right" />
-
-
-                {/* Libreria Online */}
-                <ProjectCard
-                    key="libreria-online"
-                    imgSrc={"./images/LibreriaOnline.webp"}
-                    title={"Libreria Online"}
-                    description={
-                        "Librería Online es una plataforma web diseñada para facilitar la gestión y venta de libros en línea. Los usuarios pueden explorar un catálogo de libros, filtrar por categorías, ver detalles de cada título y realizar compras de manera segura. La aplicación cuenta con un panel de administración que permite gestionar el inventario, agregar nuevos libros, actualizar información y supervisar las ventas. Desarrollada con Spring Boot y SupaBase para el backend, Angular para el frontend y MySQL como base de datos, esta solución ofrece un rendimiento eficiente y una interfaz intuitiva para brindar una experiencia óptima tanto a los administradores como a los clientes."
-                    }
-                    buttonLink={{
-                        to: "#/libreria-online",
-                        label: "LibreriaOnline",
-                    }}
-                    status={"en-desarrollo"}
-                    technologies={technologiesLibreriaOnline}
-                    aosEffect="fade-left"
-                />
-
-                {/* GEA OFFICIAL BAND */}
-                <ProjectCard
-                    key="gea"
-                    imgSrc={"./images/gea-post.jpg"}
-                    title={"GEA Oficial Band"}
-                    description={
-                        "GEA es un proyecto en desarrollo de un grupo musical real, diseñado para ofrecer a los usuarios una experiencia inmersiva donde podrán conocer la trayectoria de la banda, disfrutar de sus últimos lanzamientos y estar al tanto de sus próximos eventos."
-                    }
-                    buttonLink={{
-                        to: "#/gea-oficial-band",
-                        label: "GeaOficialBand",
-                    }}
-                    status={"en-desarrollo"}
-                    technologies={technologiesGeaPostBand}
-                    aosEffect="fade-right"
-                />
 
 
             </div>

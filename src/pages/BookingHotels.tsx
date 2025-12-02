@@ -43,7 +43,7 @@ const BookingHotels: React.FC = () => {
             summary="Reserva tu habitación de hotel y organiza tus vacaciones."
             buttonText="Ver el código del proyecto"
             onButtonClick={() => {
-                window.open("https://github.com/AlbertoAndrade10/HotelBookingSpringBoot", "_blank");
+                window.open("https://github.com/AlbertoAndrade10/HotelBooking", "_blank");
             }}
         />
     );

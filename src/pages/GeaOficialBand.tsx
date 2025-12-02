@@ -53,7 +53,7 @@ const GeaOficialBand: React.FC = () => {
             summary="Conoce la trayectoria de GEA, disfruta de sus últimos lanzamientos y mantente al tanto de sus próximos eventos."
             buttonText="Ver el código del proyecto"
             onButtonClick={() => {
-                window.open("https://github.com/AbertoAndrade10/GeaOfficialBand", "_blank");
+                window.open("https://github.com/AlbertoAndrade10/GEA-Official", "_blank");
             }}
         />
     );
