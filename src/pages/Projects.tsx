@@ -40,6 +40,14 @@ const technologiesBookingHotels = [
         name: "Spring Boot",
         iconSrc: "./icons/springboot.jpg",
     },
+    {
+        name: "Kafka",
+        iconSrc: "./icons/kafka.png",
+    },
+    {
+        name: "Redis",
+        iconSrc: "./icons/redis.png",
+    },
 
     {
         name: "NestJS",
