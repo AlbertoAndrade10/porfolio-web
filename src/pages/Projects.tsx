@@ -48,6 +48,10 @@ const technologiesBookingHotels = [
         name: "Redis",
         iconSrc: "./icons/redis.png",
     },
+    {
+        name: "Consul",
+        iconSrc: "./icons/consul.png",
+    },
 
     {
         name: "NestJS",
