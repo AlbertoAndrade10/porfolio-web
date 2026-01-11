@@ -13,24 +13,29 @@ const About: React.FC = () => {
                     Mi experiencia personal
                 </h2>
                 <p data-aos="fade-up" className="text-xl text-gray-700 leading-relaxed">
-                    Soy un Desarrollador con un enfoque orientado al backend, con
-                    experiencia en el desarrollo de aplicaciones utilizando
-                    <strong> Spring Boot</strong> y <strong>Angular</strong>. He trabajado
-                    en proyectos basados en
-                    <strong> arquitectura de microservicios</strong>, implementando
-                    seguridad basada en roles con
-                    <strong> JWT</strong>, persistencia de datos con <strong>MySQL</strong>
-                    , <strong>MongoDB </strong>y contenedores mediante
-                    <strong> Docker</strong>. También he utilizado{" "}
-                    <strong> API Gateway</strong> y desarrollado
-                    <strong> REST APIs</strong> siguiendo buenas prácticas.
+                    Soy un desarrollador de software con un enfoque principalmente orientado al backend. Mi stack tecnológico principal
+                    incluye <strong>Spring Boot</strong> y <strong>Angular</strong>, con los que he desarrollado aplicaciones siguiendo buenas prácticas de diseño y arquitectura.
                 </p>
                 <p data-aos="fade-up" className="text-xl text-gray-700 leading-relaxed mt-4">
-                    En la parte frontend, me he encargado de construir interfaces visuales
-                    con
-                    <strong> Angular</strong> y <strong>TailwindCSS</strong>, creando
-                    servicios, rutas, guards e interceptores para asegurar un flujo de
-                    navegación y autenticación sólido dentro de la aplicación.
+                    He trabajado en arquitectura de <strong>microservicios</strong> y <strong>arquitectura hexagonal</strong>, implementando
+                    seguridad basada en roles mediante <strong>JWT</strong>, así como desarrollado <strong>APIs REST</strong> bien estructuradas. Tengo experiencia
+                    en la gestión de bases de datos relacionaes y no relacionales como <strong>PostgreSQL, MySQL</strong> y <strong>MongoDB</strong>, además del uso de <strong>Docker</strong> para la contenerización de aplicaciones.
+                    Así mismo, he aplicado <strong>Kafka</strong> para la programación orientada a eventos y <strong>Redis</strong> para la gestión de caché.
+                </p>
+
+                <p data-aos="fade-up" className="text-xl text-gray-700 leading-relaxed mt-4">
+                    En el area de frontend, he desarrollado interfaces de usuario utilizando <strong>Angular</strong> y <strong>TailwindCSS</strong>, creando servicios,
+                    guards e interceptores para garantizar un flujo de navegación coherente y una autenticación segura.
+                </p>
+
+
+                <p data-aos="fade-up" className="text-xl text-gray-700 leading-relaxed mt-4">
+                    Adicionalmente, cuento con experiencia en desarrollo backend utilizando <strong>NestJS</strong>, tanto en <strong>aplicaciones modulares</strong> como de <strong>microservicios</strong>
+                    , así como conocimientos en <strong>Laravel</strong>.
+                    En frontend, también he trabajado con <strong>NextJS</strong>, <strong>React</strong> y <strong>TypeScript</strong>, desarrollando interfaces modernas y orientadas a la escalabilidad.
+                </p>
+                <p data-aos="fade-up" className="text-xl text-gray-700 leading-relaxed mt-4">
+                    Me caracterizo por una alta capacidad de aprendizaje, compromiso con las buenas prácticas y motivación por seguir creciendo profesionalmente en entornos técnicos exigentes.
                 </p>
             </section>
 
