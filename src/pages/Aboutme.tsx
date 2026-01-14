@@ -31,7 +31,7 @@ const About: React.FC = () => {
 
                 <p data-aos="fade-up" className="text-xl text-gray-700 leading-relaxed mt-4">
                     Adicionalmente, cuento con experiencia en desarrollo backend utilizando <strong>NestJS</strong>, tanto en <strong>aplicaciones modulares</strong> como de <strong>microservicios</strong>
-                    , así como conocimientos en <strong>Laravel</strong>.
+                    , así como conocimientos en <strong>Laravel</strong>. <br />
                     En frontend, también he trabajado con <strong>NextJS</strong>, <strong>React</strong> y <strong>TypeScript</strong>, desarrollando interfaces modernas y orientadas a la escalabilidad.
                 </p>
                 <p data-aos="fade-up" className="text-xl text-gray-700 leading-relaxed mt-4">
@@ -48,7 +48,7 @@ const About: React.FC = () => {
                     <InterestCard
                         title={"Especialización"}
                         description={
-                            "Profundizar y especializarme en tecnologías como Spring Boot y Angular."
+                            "Profundizar y especializarme en tecnologías como Spring Boot, NestJS entre otros."
                         }
                         aosEffect="fade-left"
                     />
@@ -73,13 +73,7 @@ const About: React.FC = () => {
                         }
                         aosEffect="fade-right"
                     />
-                    <InterestCard
-                        title={"Metodologías ágiles"}
-                        description={
-                            "Adoptar buenas prácticas de desarrollo y metodologías ágiles."
-                        }
-                        aosEffect="fade-left"
-                    />
+
                 </div>
             </section>
 
@@ -97,11 +91,12 @@ const About: React.FC = () => {
                         <TechnologyCard name={"Java"} iconSrc={"./icons/java.png"} aosEffect="fade-right" />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"Angular"} iconSrc={"./icons/angular.jpg"} aosEffect="fade-left" />
+                        <TechnologyCard name={"NestJS"} iconSrc={"./icons/nestjs.png"} aosEffect="fade-left" />
                     </div>
                     <div className="w-full">
-                        <TechnologyCard name={"JavaScript"} iconSrc={"./icons/javascript.png"} aosEffect="fade-right" />
+                        <TechnologyCard name={"Angular"} iconSrc={"./icons/angular.jpg"} aosEffect="fade-left" />
                     </div>
+       
                     <div className="w-full">
                         <TechnologyCard name={"TypeScript"} iconSrc={"./icons/typescript.png"} aosEffect="fade-left" />
                     </div>
@@ -129,6 +124,7 @@ const About: React.FC = () => {
                     <div className="w-full">
                         <TechnologyCard name={"GitLab"} iconSrc={"./icons/gitlab.png"} aosEffect="fade-left" />
                     </div>
+
                 </div>
             </section>
         </div>
